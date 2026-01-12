@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인포그래픽 깃허브 배포 가이드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+        .step-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-indigo-600 text-white py-12 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">인포그래픽 깃허브 배포 완벽 가이드</h1>
+            <p class="text-indigo-100 text-lg">제미나이로 만든 콘텐츠를 웹사이트로 변환하고 깃허브에 무료로 올리는 방법</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-12 px-4">
+        
+        <!-- Intro -->
+        <div class="mb-12 text-center">
+            <span class="bg-indigo-100 text-indigo-600 px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide">Tutorial</span>
+            <h2 class="text-2xl font-bold mt-4">15단계로 끝내는 웹 배포 과정</h2>
+        </div>
+
+        <div class="space-y-8">
+            <!-- Phase 1: Gemini & Local -->
+            <section>
+                <h3 class="flex items-center text-xl font-bold mb-6 text-indigo-700">
+                    <span class="w-8 h-8 bg-indigo-700 text-white rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+                    제미나이에서 HTML 생성 및 저장
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 step-card">
+                        <div class="font-bold text-lg mb-2">1~3단계: 콘텐츠 변환</div>
+                        <p class="text-slate-600 mb-4">제미나이에 접속하여 도구에서 <strong>Canvas</strong>를 선택합니다. 준비한 설교문이나 내용을 넣고 "깃허브에 올릴 HTML로 만들어줘"라고 요청하세요.</p>
+                        <div class="bg-slate-100 rounded-lg h-40 flex items-center justify-center text-slate-400 italic">
+                            
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 step-card">
+                        <div class="font-bold text-lg mb-2">4~5단계: 로컬 파일 저장</div>
+                        <p class="text-slate-600 mb-4">Canvas 화면에서 코드 버튼을 클릭하여 전체 내용을 복사합니다. 메모장을 열어 붙여넣기 한 후 <strong>index.html</strong>이라는 이름으로 저장하세요.</p>
+                        <div class="bg-slate-100 rounded-lg h-40 flex items-center justify-center text-slate-400 italic">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phase 2: GitHub Upload -->
+            <section>
+                <h3 class="flex items-center text-xl font-bold mb-6 text-indigo-700">
+                    <span class="w-8 h-8 bg-indigo-700 text-white rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+                    깃허브 저장소 만들기 및 파일 업로드
+                </h3>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="flex-1">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="text-indigo-600 font-bold mr-3">07.</span>
+                                    <span><a href="https://github.com" target="_blank" class="text-indigo-600 underline">깃허브(GitHub)</a>에 접속하여 로그인합니다.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-600 font-bold mr-3">08.</span>
+                                    <span>새로운 저장소(Repository)를 추가(New)합니다.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-600 font-bold mr-3">09.</span>
+                                    <span>메뉴바에서 'Add file'을 클릭하여 작성한 <strong>index.html</strong> 파일을 올립니다.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-600 font-bold mr-3">10.</span>
+                                    <span>파일이 다 올라가면 하단의 <strong>'Commit changes'</strong> 버튼을 누릅니다.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-72 bg-slate-100 rounded-xl h-48 flex items-center justify-center text-slate-400 italic text-center p-4">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phase 3: Deployment -->
+            <section>
+                <h3 class="flex items-center text-xl font-bold mb-6 text-indigo-700">
+                    <span class="w-8 h-8 bg-indigo-700 text-white rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+                    웹사이트 활성화 및 배포
+                </h3>
+                <div class="bg-indigo-900 text-indigo-100 p-8 rounded-2xl shadow-xl">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-white font-bold text-lg mb-4">페이지 설정 과정 (11~13단계)</h4>
+                            <ol class="space-y-3 text-sm md:text-base">
+                                <li>• 저장소 상단의 <strong>Settings</strong> 메뉴를 클릭합니다.</li>
+                                <li>• 왼쪽 사이드바에서 <strong>Pages</strong> 버튼을 클릭합니다.</li>
+                                <li>• Build and deployment 섹션에서 <strong>Branch</strong>를 'main'으로 선택하고 <strong>Save</strong>를 누릅니다.</li>
+                            </ol>
+                        </div>
+                        <div class="bg-indigo-800/50 p-4 rounded-xl border border-indigo-700">
+                            <h4 class="text-white font-bold text-lg mb-4">최종 배포 (14~15단계)</h4>
+                            <p class="text-sm mb-4 leading-relaxed">약 1분 정도 기다린 후 페이지를 새로고침하면 상단에 사이트 주소가 나타납니다. <strong>'Visit site'</strong>를 클릭하여 주소를 복사하고 공유하세요!</p>
+                            <div class="bg-indigo-600 py-2 px-4 rounded text-center text-xs font-mono break-all">
+                                https://username.github.io/repository-name/
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer Note -->
+        <footer class="mt-16 pt-8 border-t border-slate-200 text-center text-slate-500 text-sm">
+            <p>© 2024 인포그래픽 제작 및 배포 가이드. 누구나 쉽게 웹에 콘텐츠를 올릴 수 있습니다.</p>
+        </footer>
+    </main>
+
+</body>
+</html>
